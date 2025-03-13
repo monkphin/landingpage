@@ -1,0 +1,173 @@
+/* GENERAL RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* BODY & TYPOGRAPHY */
+body {
+    font-family: "Futura", "Helvetica", "Arial", sans-serif;
+    background-color: white;
+    color: black;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+}
+
+/* GRID-BASED WORD MARK */
+.word-mark-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+    border-bottom: 3px solid black;
+}
+
+.word-mark {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    width: 40%;
+    max-width: 400px;
+    text-transform: uppercase;
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: center;
+    letter-spacing: 2px;
+}
+
+.word-mark span {
+    border: 3px solid black;
+    padding: 15px;
+}
+
+/* FIXED HEADER */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 15px;
+    border-bottom: 3px solid black;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    font-weight: bold;
+    position: fixed;
+    background: white;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+
+.logo {
+    padding-left: 20px;
+}
+
+/* NAVIGATION */
+nav ul {
+    display: flex;
+    list-style: none;
+    padding-right: 20px;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 5px;
+    border-bottom: 2px solid transparent;
+}
+
+nav ul li a:hover {
+    border-bottom: 2px solid black;
+}
+
+/* HAZARD STRIPE SECTION BREAK */
+.hazard {
+    width: 100%;
+    height: 15px;
+    background: repeating-linear-gradient(
+        -45deg,
+        black,
+        black 8px,
+        white 8px,
+        white 16px
+    );
+    margin: 20px 0;
+}
+
+/* LAYOUT CONTAINER */
+.layout {
+    display: flex;
+    width: 100%;
+    max-width: 1200px;
+    height: calc(100vh - 120px);
+    overflow: hidden;
+}
+
+/* SCROLLABLE CONTENT */
+.grid-layout {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    padding: 20px;
+    overflow-y: auto;
+    max-height: 100%;
+    flex: 2;
+}
+
+/* CONTENT CARDS */
+.card {
+    border: 3px solid black;
+    padding: 30px;
+    text-align: left;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.card h2 {
+    border-bottom: 3px solid black;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+/* FIXED BREAKOUT BOX */
+.breakout-box {
+    border-left: 3px solid black;
+    padding: 30px;
+    text-align: left;
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    height: 100vh;
+    width: 25%;
+    position: fixed;
+    right: 0;
+    top: 80px;
+    background: white;
+    overflow-y: auto;
+}
+
+.breakout-box h3 {
+    border-bottom: 3px solid black;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+/* FOOTER */
+footer {
+    width: 100%;
+    padding: 15px;
+    border-top: 3px solid black;
+    position: fixed;
+    bottom: 0;
+    background: white;
+}
